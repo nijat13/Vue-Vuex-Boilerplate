@@ -27,6 +27,9 @@ yarn e2e
 yarn test
 ```
 
-ESlint config and rules.
+Future implementation:
+
+- [ ] ESlint config and rules.
+- [ ] Global css styling
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
