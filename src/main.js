@@ -7,6 +7,7 @@ import Resource from 'vue-resource'
 
 import filters from './filters'
 import routerMap from './config/routers'
+import i18n from './config/i18n'
 import {initResource, interceptRouter} from './utils'
 import App from './App'
 
@@ -21,6 +22,7 @@ initResource(Vue)
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: routerMap,
   history: false,
   scrollBehavior: function (to, from, savedPosition) {
@@ -30,9 +32,11 @@ const router = new Router({
 
 interceptRouter(router)
 
-/* eslint-disable no-new */
-new Vue({
+const Main = new Vue({
   el: '#app',
+  i18n,
   router,
   render: h => h(App)
 })
+
+export default Main
