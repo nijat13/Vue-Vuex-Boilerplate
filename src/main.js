@@ -5,6 +5,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
 
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Vuelidate from 'vuelidate'
+import VueCookie from 'vue-cookie'
+
 import filters from './filters'
 import routerMap from './config/routers'
 import i18n from './config/i18n'
@@ -20,6 +26,9 @@ Vue.use(Resource)
 initResource(Vue)
 
 Vue.use(Router)
+Vue.use(BootstrapVue)
+Vue.use(Vuelidate)
+Vue.use(VueCookie)
 
 const router = new Router({
   mode: 'history',
