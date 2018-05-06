@@ -30,6 +30,6 @@ yarn test
 Future implementation:
 
 - [ ] ESlint config and rules.
-- [ ] Global css styling
+- [X] Global css styling
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
