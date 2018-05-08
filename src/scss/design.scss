@@ -1,0 +1,44 @@
+/*  Imported styles
+----------------------------------------------------*/
+
+// Utilities
+@import "_utilities/mixins";
+
+
+//* Font families //-------------------------------------*/
+// @each $slug, $fonts in
+//        (display-regular, PFDinDisplayPro-Regular),
+// {
+//  .font-#{$slug}
+//  {
+//    font-family: "#{$fonts}", Arial, sans-serif;
+//  }
+// }
+
+/*  Project standarts
+----------------------------------------------------*/
+
+// ******************************
+// Import template styles
+// ******************************
+
+
+// Atoms
+@import "_atoms/buttons";
+@import "_atoms/forms";
+@import "_atoms/tables";
+
+// Quarks
+@import "_quarks/lists";
+
+// Base structture
+@import "_base/_header";
+@import "_base/_footer";
+
+// For project ui
+@import "project-ui";
+
+// ******************************
+// Import other styles
+// ******************************
+@import "style";

@@ -5,10 +5,9 @@ import mutations from './mutations'
 import actions from './actions'
 import plugins from './plugins'
 
-// 引入不同页面自由的 module
-/* inject:import start */
+// Modules
 import Index from './modules/index'
-/* inject:import end */
+import Locale from './modules/locale'
 
 Vue.use(Vuex)
 
@@ -25,7 +24,8 @@ export default new Vuex.Store({
   plugins,
   modules: {
     /* inject start */
-    index: Index
+    index: Index,
+    locale: Locale
     /* inject end */
   }
 })

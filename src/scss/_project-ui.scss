@@ -1,0 +1,79 @@
+/*  Helper classes
+----------------------------------------------------*/
+//////////////////////////
+// Dynamic classes
+//////////////////////////
+
+
+
+//////////////////////////
+// Static classes
+//////////////////////////
+.nm {
+  margin: 0 !important;
+}
+
+.np {
+  padding: 0 !important;
+}
+
+.nb {
+  border: none !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.font-w-normal {
+  font-weight: normal !important;
+}
+
+.bg-trns {
+  background: transparent !important;
+}
+
+.display-inline {
+  display: inline-block !important;
+}
+
+.text-none {
+  text-decoration: none !important;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.resize {
+  resize: none !important;
+}
+
+.over-hide {
+  overflow: hidden !important;
+}
+
+.cur-pot{
+  cursor: pointer !important;
+}
+
+.hidden-xs {
+  @include breakpoint(0, 767px){
+    display: none;
+  }
+}
+
+.visible-xs {
+  display: none;
+  @include breakpoint(0, 767px){
+    display: block;
+  }
+}

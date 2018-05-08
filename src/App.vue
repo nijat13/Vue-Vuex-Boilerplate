@@ -11,23 +11,15 @@
   }
 </script>
 
-<style>
+<style lang="scss">
+@import './scss/design.scss';
+
   html {
     height: 100%;
   }
 
   body {
+    margin: 0;
   }
 
-  #main {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-  }
-
-  .header {
-    width: 100%;
-  }
 </style>
